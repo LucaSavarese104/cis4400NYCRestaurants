@@ -21,15 +21,20 @@ The Information Architecture describes the data flow and tools used in the proje
    - NYC Open Data:
      - [DOHMH New York City Restaurant Inspection Results](https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j/about_data)
      - [Open Restaurants Inspections](https://data.cityofnewyork.us/Transportation/Open-Restaurants-Inspections/4dx7-axux/about_data)
-   - [Yelp Dataset and API](https://www.yelp.com/dataset):
-     - Provides restaurant ratings, review counts, and metadata.
+   - Yelp Dataset and API:
+      - [Yelp Dataset](https://www.yelp.com/dataset)
+      - [Yelp Fusion API](https://docs.developer.yelp.com/)
+      - Provides restaurant ratings, review counts, and metadata.
 
 2. **Pipeline Stages**:
-   - Data Collection → Cleaning → Transformation → Storage → Visualization.
+- **Data Collection**: Collect data from NYC Open Data and Yelp APIs.
+- **Cleaning**: Handle missing values, duplicates, and align data formats.
+- **Transformation**: Reformat data into a star schema for analysis.
+- **Storage**: Store intermediate data in MongoDB and processed data in Azure.
+- **Visualization**: Create dashboards in Tableau to present insights.
 
 3. **Key Tools**:
    - Data collection via APIs.
    - MongoDB for raw data storage.
-   - Google Colab.
-   - Microsoft Azure for final processed data storage.
+   - Google Colab and Microsoft Azure for data processing and storage.
    - Tableau for visualization.
