@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="dw_opres_lgl" database="LogicalDesign" id="LogicalDesign-1fad" >
+	<schema name="dw_opres_lgl" >
+		<table name="dim_inspection_date" prior="dim_time" >
+			<column name="date_key" type="BIGINT" jt="-5" mandatory="y" />
+			<column name="inspection_date" type="DATE" jt="91" />
+			<column name="inspection_type_yelp" type="VARCHAR" length="9999999" jt="12" />
+			<column name="grade_yelp" type="VARCHAR" length="9999999" jt="12" />
+			<column name="grade_date_yelp" type="DATE" jt="91" />
+			<column name="record_date_yelp" type="DATE" jt="91" />
+			<index name="pk_dim_time" unique="PRIMARY_KEY" >
+				<column name="date_key" />
+			</index>
+			<index name="unq_inspection_date" unique="UNIQUE_INDEX" >
+				<column name="inspection_date" />
+			</index>
+		</table>
+		<table name="dim_location" prior="DIM_LOCATION" >
+			<column name="location_ID" prior="Location_ID" type="BIGINT" jt="-5" mandatory="y" />
+			<column name="latitude" type="DOUBLE" jt="8" />
+			<column name="longitude" type="DOUBLE" jt="8" />
+			<column name="zip_code" type="VARCHAR" jt="12" />
+			<index name="pk_dim_location" unique="PRIMARY_KEY" >
+				<column name="location_ID" />
+			</index>
+		</table>
+		<table name="dim_restaurant" prior="dim_rest" >
+			<column name="restaurant_ID" type="BIGINT" jt="-5" mandatory="y" >
+				<comment><![CDATA[CAMIS]]></comment>
+			</column>
+			<column name="restaurant_name" type="VARCHAR" length="100" jt="12" >
+				<comment><![CDATA[DBA]]></comment>
+			</column>
+			<column name="cuisine_type" type="VARCHAR" length="100" jt="12" />
+			<column name="address" type="VARCHAR" length="100" jt="12" />
+			<column name="borough" type="VARCHAR" length="100" jt="12" />
+			<index name="pk_dim_restaurant" unique="PRIMARY_KEY" >
+				<column name="restaurant_ID" />
+			</index>
+		</table>
+		<table name="facts_restaurant_analysis" prior="fact_restaurant_analysis" >
+			<column name="inspection_ID" type="BIGINT" jt="-5" mandatory="y" />
+			<column name="location_ID" prior="Location_ID" type="BIGINT" jt="-5" mandatory="y" />
+			<column name="restaurant_ID" type="BIGINT" jt="-5" mandatory="y" />
+			<column name="date_key" type="BIGINT" jt="-5" mandatory="y" />
+			<column name="violation_count" type="INT" jt="4" />
+			<column name="inspection_score" type="INT" jt="4" />
+			<column name="yelp_rating" type="DOUBLE" jt="8" />
+			<column name="yelp_review_count" type="DOUBLE" jt="8" />
+			<column name="inspection_date" type="DATE" jt="91" mandatory="y" />
+			<column name="inspection_type" type="VARCHAR" jt="12" />
+			<column name="critical_flag" type="VARCHAR" jt="12" />
+			<column name="grade" type="VARCHAR" jt="12" />
+			<index name="pk_facts_restaurant_analysis" unique="PRIMARY_KEY" >
+				<column name="inspection_ID" />
+			</index>
+			<fk name="fk_facts_restaurant_analysis_dim_location" to_schema="dw_opres_lgl" to_table="dim_location" type="NonIdentifying" mandatory="y" cardinality="OneMore" range_from="0" range_to="0" >
+				<fk_column name="location_ID" pk="location_ID" />
+			</fk>
+			<fk name="fk_facts_restaurant_analysis_dim_restaurant" to_schema="dw_opres_lgl" to_table="dim_restaurant" type="NonIdentifying" mandatory="y" cardinality="OneMore" range_from="0" range_to="0" >
+				<fk_column name="restaurant_ID" pk="restaurant_ID" />
+			</fk>
+			<fk name="fk_facts_restaurant_analysis_dim_time" to_schema="dw_opres_lgl" to_table="dim_inspection_date" type="NonIdentifying" mandatory="y" cardinality="OneMore" range_from="0" range_to="0" >
+				<fk_column name="date_key" pk="date_key" />
+			</fk>
+			<fk name="fk_facts_restaurant_analysis_dim_inspection_date" to_schema="dw_opres_lgl" to_table="dim_inspection_date" type="NonIdentifying" mandatory="y" cardinality="OneMore" range_from="0" range_to="0" >
+				<fk_column name="inspection_date" pk="inspection_date" />
+			</fk>
+		</table>
+	</schema>
+	<layout name="Default Layout" id="Layout-10c4" show_relation="columns" >
+		<entity schema="dw_opres_lgl" name="dim_inspection_date" color="C1D8EE" x="656" y="96" />
+		<entity schema="dw_opres_lgl" name="dim_location" color="C1D8EE" x="48" y="48" />
+		<entity schema="dw_opres_lgl" name="dim_restaurant" color="C1D8EE" x="64" y="304" />
+		<entity schema="dw_opres_lgl" name="facts_restaurant_analysis" color="C1D8EE" x="368" y="112" />
+	</layout>
+</project>
