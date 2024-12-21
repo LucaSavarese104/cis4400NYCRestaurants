@@ -135,11 +135,7 @@ This project analyzes NYC restaurant health violations and their correlation wit
    - [`Transform_Open_Restaurant_Data_Group_2.ipynb`](Scripts/Transform_Open_Restaurant_Data_Group_2.ipynb)
    - [`Yelp_API_scraping_and_upload.ipynb`](Scripts/Yelp_API_scraping_and_upload.ipynb)
 
-3. **Visuals**:
-   - Borough vs. Yelp Rating: [`Borough_vs_Yelp.png`](Visuals/Borough%20vs.%20Average%20Yelp%20Rating%20by%20Critical%20Violations.png)
-   - NYC ZIP Code Hotspots: [`NYC_Hotspots.png`](Visuals/NYC%20ZIP%20Codes%20Violation%20Hotspots.png)
-
-4. **Presentation**:
+3. **Presentation**:
    - Final presentation: [`CIS4400 Group 2 Presentation.pptx`](Presentation/CIS4400%20Group%202%20Presentation.pptx)
 
 ---
