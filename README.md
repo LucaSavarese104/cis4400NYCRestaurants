@@ -139,7 +139,6 @@ This project analyzes NYC restaurant health violations and their correlation wit
 
 ## **7. Supporting Files**
 
-### File Structure
 1. **Model & Architecture**:
    - [Information Architecture](Model%20&%20Architecture/information_architecture.png)
    - [Data Architecture](Model%20&%20Architecture/Data%20Architecture.png)
@@ -167,7 +166,7 @@ The PowerPoint presentation provides a summary of the project's findings, visual
 ## **9. Conclusion and Insights**
 
 ### **Conclusion**
-This project provided insights into the correlation between health inspection violations and Yelp ratings for restaurants across NYC boroughs. By analyzing borough-specific trends and critical violations, we gained a deeper understanding of the impact of public health compliance on customer satisfaction and restaurant reputation. The integration of NYC Open Data and Yelp API data allowed us to create actionable recommendations for stakeholders, including restaurant owners, health inspectors, and policymakers.
+This project provided a look into the correlation between health inspection violations and Yelp ratings for restaurants across NYC boroughs. By analyzing borough-specific trends and critical violations, we gained a deeper understanding of the impact of public health compliance on customer satisfaction and restaurant reputation. The integration of NYC Open Data and Yelp API data allowed us to create actionable recommendations for stakeholders, including restaurant owners, health inspectors, and policymakers.
 
 ---
 
