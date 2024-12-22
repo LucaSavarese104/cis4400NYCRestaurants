@@ -1,6 +1,6 @@
 # **cis4400NYCRestaurants**
+The project addresses the correlation between NYC restaurant health violations and Yelp ratings. By analyzing this relationship, it provides actionable insights for stakeholders to improve health compliance and customer satisfaction.
 
-**Exploring the Relationship Between NYC Restaurant Inspections and Yelp Ratings**
 
 ---
 
@@ -13,8 +13,9 @@
 6. [Interface](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#6-interface)
 7. [Supporting Files](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#7-supporting-files)
 8. [PowerPoint Presentation](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#8-powerpoint-presentation)
+9. Conclusion and Insights
 
----
+
 
 ## **1. Business Problem**
 
@@ -26,7 +27,7 @@ This project analyzes NYC restaurant health violations and their correlation wit
 - Provide borough-specific insights into compliance and public health trends.
 - Offer actionable recommendations for restaurant owners, health inspectors, and policymakers.
 
----
+
 
 ## **2. Business Impact**
 
@@ -35,11 +36,28 @@ This project analyzes NYC restaurant health violations and their correlation wit
 - **Health Inspectors**: Detect boroughs and ZIP codes with recurring violations.
 - **Policymakers**: Leverage insights to develop borough-level public health policies.
 
-### Costs and Risks
-- **Costs**: Microsoft Azure (data storage), Tableau (visualization tools).
-- **Risks**: API limitations (e.g., Yelp API call caps), data inconsistency between inspection and Yelp datasets.
+### **Risks**
+- **Data Challenges**:
+  - Missing or inconsistent attributes in inspection and Yelp datasets.
+  - Duplicate records and format mismatches during integration.
+- **Scalability**:
+  - Processing and analyzing large datasets without optimized storage or compute resources.
+- **API Rate Limits**:
+  - Yelp Fusion API restrictions could limit data retrieval for restaurants across all boroughs.
+- **Integration Complexity**:
+  - Aligning inspection records with Yelp data requires fuzzy matching techniques, which may not be 100% accurate.
 
----
+### **Costs**
+- **Tools**:
+  - **Microsoft Azure**: For cloud-based data storage and processing.
+  - **Tableau**: For creating interactive dashboards and visualizations.
+- **Development**:
+  - Time and resources required for data cleaning, ETL processes, and API integration.
+- **API Costs**:
+  - Limited API calls with Yelp Fusion API (300–500 calls per account tier) may require workarounds like caching.
+
+
+
 
 ## **3. Business Personas**
 
@@ -53,7 +71,6 @@ This project analyzes NYC restaurant health violations and their correlation wit
 - **Data Analysts**: Analyze and visualize trends.
 - **Visualization Experts**: Create dashboards for stakeholder insights.
 
----
 
 ## **4. Data Sources and Methods**
 
@@ -68,11 +85,11 @@ This project analyzes NYC restaurant health violations and their correlation wit
 ### Methods
 - **ETL Process**:
   - Scripts for data cleaning: [`cleaning_and_merging_borough.ipynb`](Scripts/cleaning_and_merging_borough.ipynb)
-  - Data transformation: [`Transform_Open_Restaurant_Data_Group_2.ipynb`](Scripts/Transform_Open_Restaurant_Data_Group_2.ipynb)
+  - Data transformation and upload: [`Transform_Open_Restaurant_Data_Group_2.ipynb`](Scripts/Transform_Open_Restaurant_Data_Group_2.ipynb)
   - Yelp API integration: [`Yelp_API_scraping_and_upload.ipynb`](Scripts/Yelp_API_scraping_and_upload.ipynb)
 - **Visualization**: Tableau dashboards created from processed data.
 
----
+
 
 ## **5. Data Tools**
 
@@ -85,7 +102,7 @@ This project analyzes NYC restaurant health violations and their correlation wit
 - **Visualization**:
   - Tableau for creating interactive dashboards.
 
----
+
 
 ## **6. Interface**
 
@@ -120,7 +137,7 @@ This project analyzes NYC restaurant health violations and their correlation wit
    - ![Monthly Trends](Visuals/Monthly%20Trends%20in%20Critical%20Flag%20Health%20Inspections%20Across%20NYC%20Boroughs.png)
       - [Tableau Public](https://public.tableau.com/app/profile/luca.savarese/viz/MonthlyTrends_17348225607490/Sheet15)
 
----
+
 
 ## **7. Supporting Files**
 
@@ -138,7 +155,7 @@ This project analyzes NYC restaurant health violations and their correlation wit
 3. **Presentation**:
    - Final presentation: [`CIS4400 Group 2 Presentation.pptx`](Presentation/CIS4400%20Group%202%20Presentation.pptx)
 
----
+
 
 ## **8. PowerPoint Presentation**
 
@@ -147,6 +164,45 @@ The PowerPoint presentation provides a summary of the project's findings, visual
 2. **Visualization Snapshots**: Key insights from Tableau dashboards.
 3. **Recommendations**: Suggestions for restaurant owners, health inspectors, and policymakers.
 
+
+
+## **9. Conclusion and Insights**
+
+### **Conclusion**
+This project provided valuable insights into the correlation between health inspection violations and Yelp ratings for restaurants across NYC boroughs. By analyzing borough-specific trends and critical violations, we gained a deeper understanding of the impact of public health compliance on customer satisfaction and restaurant reputation. The integration of NYC Open Data and Yelp API data allowed us to create actionable recommendations for stakeholders, including restaurant owners, health inspectors, and policymakers.
+
 ---
 
+### **Insights**
+1. **Correlation Between Violations and Ratings**:
+   - Restaurants with higher counts of critical violations tend to have lower Yelp ratings, highlighting the strong influence of public health compliance on customer perceptions.
 
+2. **Borough-Specific Trends**:
+   - **Manhattan and Brooklyn** show the highest density of critical violations, indicating the need for targeted health inspection efforts.
+   - **Bronx** and **Staten Island** generally have fewer violations but also lower average Yelp ratings, suggesting opportunities for improvement in customer satisfaction.
+
+3. **ZIP Code Hotspots**:
+   - ZIP codes in lower Manhattan and northern Brooklyn consistently display high counts of critical violations, making them priority areas for health compliance efforts.
+
+4. **Yelp Rating Categories**:
+   - Restaurants rated 4.0 or above on Yelp tend to have significantly fewer critical violations compared to lower-rated establishments.
+
+5. **Temporal Trends**:
+   - Monthly trends reveal seasonal variations in health violations, with some boroughs experiencing spikes in violations during specific times of the year. This information can be used to schedule targeted inspections.
+
+---
+
+### **Actionable Recommendations**
+1. **For Restaurant Owners**:
+   - Focus on reducing critical violations to improve Yelp ratings and attract more customers.
+   - Leverage borough-specific trends to prioritize compliance efforts.
+
+2. **For Health Inspectors**:
+   - Target inspections in high-risk ZIP codes, particularly in Manhattan and Brooklyn.
+   - Use temporal data to anticipate periods of increased violations and allocate resources accordingly.
+
+3. **For Policymakers**:
+   - Develop borough-specific public health initiatives to address recurring issues in high-violation areas.
+   - Create incentive programs for restaurants to maintain health compliance and improve customer satisfaction.
+
+---
