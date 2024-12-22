@@ -190,7 +190,7 @@ This project provided insights into the correlation between health inspection vi
 
 ---
 
-### **Actionable Recommendations**
+### **Recommendations**
 1. **For Restaurant Owners**:
    - Focus on reducing critical violations to improve Yelp ratings and attract more customers.
    - Leverage borough-specific trends to prioritize compliance efforts.
