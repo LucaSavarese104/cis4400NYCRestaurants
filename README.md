@@ -5,14 +5,14 @@
 ---
 
 ## **Table of Contents**
-1. [Business Problem](#business-problem)
-2. [Business Impact](#business-impact)
-3. [Business Personas](#business-personas)
-4. [Data Sources and Methods](#data-sources-and-methods)
-5. [Data Tools](#data-tools)
-6. [Interface](#interface)
-7. [Supporting Files](#supporting-files)
-8. [PowerPoint Presentation](#powerpoint-presentation)
+1. [Business Problem](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#1-business-problem)
+2. [Business Impact](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#2-business-impact)
+3. [Business Personas](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#3-business-personas)
+4. [Data Sources and Methods](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#4-data-sources-and-methods)
+5. [Data Tools](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#5-data-tools)
+6. [Interface](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#6-interface)
+7. [Supporting Files](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#7-supporting-files)
+8. [PowerPoint Presentation](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#8-powerpoint-presentation)
 
 ---
 
