@@ -8,10 +8,10 @@
 3. [Business Personas](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#3-business-personas)
 4. [Data Sources and Methods](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#4-data-sources-and-methods)
 5. [Data Tools](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#5-data-tools)
-6. [Interface](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#6-interface)
+6. [Visualizations and Insights](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#6-visualizations-and-insights)
 7. [Supporting Files](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#7-supporting-files)
 8. [PowerPoint Presentation](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#8-powerpoint-presentation)
-9. [Conclusion and Insights](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#9-conclusion-and-insights)
+9. [Conclusion and Recommendations](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#9-conclusion-and-recommendations)
 
 
 
@@ -102,9 +102,9 @@ This project analyzes NYC restaurant health violations and their correlation wit
 
 
 
-## **6. Interface**
+## **6. Visualizations and Insights**
 
-### Visualization and Insights
+### Visualizations
 
 1. **Borough vs. Average Yelp Rating by Critical Violations**  
    ![Borough vs. Yelp Rating](Visuals/Borough%20vs.%20Average%20Yelp%20Rating%20by%20Critical%20Violations.png)
@@ -135,7 +135,22 @@ This project analyzes NYC restaurant health violations and their correlation wit
    - ![Monthly Trends](Visuals/Monthly%20Trends%20in%20Critical%20Flag%20Health%20Inspections%20Across%20NYC%20Boroughs.png)
       - [Tableau Public](https://public.tableau.com/app/profile/luca.savarese/viz/MonthlyTrends_17348225607490/Sheet15)
 
+### **Insights**
+1. **Correlation Between Violations and Ratings**:
+   - Restaurants with higher counts of critical violations tend to have lower Yelp ratings, highlighting the strong influence of public health compliance on customer perceptions.
 
+2. **Borough-Specific Trends**:
+   - **Manhattan and Brooklyn** show the highest density of critical violations, indicating the need for targeted health inspection efforts.
+   - **Bronx** and **Staten Island** generally have fewer violations but also lower average Yelp ratings, suggesting opportunities for improvement in customer satisfaction.
+
+3. **ZIP Code Hotspots**:
+   - ZIP codes in lower Manhattan and northern Brooklyn consistently display high counts of critical violations, making them priority areas for health compliance efforts.
+
+4. **Yelp Rating Categories**:
+   - Restaurants rated 4.0 or above on Yelp tend to have significantly fewer critical violations compared to lower-rated establishments.
+
+5. **Temporal Trends**:
+   - Monthly trends reveal seasonal variations in health violations, with some boroughs experiencing spikes in violations during specific times of the year. This information can be used to schedule targeted inspections.
 
 ## **7. Supporting Files**
 
@@ -163,29 +178,11 @@ The PowerPoint presentation provides a summary of the project's findings, visual
 
 
 
-## **9. Conclusion and Insights**
+## **9. Conclusion and Recommendations**
 
 ### **Conclusion**
 This project provided a look into the correlation between health inspection violations and Yelp ratings for restaurants across NYC boroughs. By analyzing borough-specific trends and critical violations, we gained a deeper understanding of the impact of public health compliance on customer satisfaction and restaurant reputation. The integration of NYC Open Data and Yelp API data allowed us to create actionable recommendations for stakeholders, including restaurant owners, health inspectors, and policymakers.
 
----
-
-### **Insights**
-1. **Correlation Between Violations and Ratings**:
-   - Restaurants with higher counts of critical violations tend to have lower Yelp ratings, highlighting the strong influence of public health compliance on customer perceptions.
-
-2. **Borough-Specific Trends**:
-   - **Manhattan and Brooklyn** show the highest density of critical violations, indicating the need for targeted health inspection efforts.
-   - **Bronx** and **Staten Island** generally have fewer violations but also lower average Yelp ratings, suggesting opportunities for improvement in customer satisfaction.
-
-3. **ZIP Code Hotspots**:
-   - ZIP codes in lower Manhattan and northern Brooklyn consistently display high counts of critical violations, making them priority areas for health compliance efforts.
-
-4. **Yelp Rating Categories**:
-   - Restaurants rated 4.0 or above on Yelp tend to have significantly fewer critical violations compared to lower-rated establishments.
-
-5. **Temporal Trends**:
-   - Monthly trends reveal seasonal variations in health violations, with some boroughs experiencing spikes in violations during specific times of the year. This information can be used to schedule targeted inspections.
 
 ---
 
