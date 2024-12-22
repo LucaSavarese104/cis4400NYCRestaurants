@@ -1,6 +1,4 @@
 # **cis4400NYCRestaurants**
-The project addresses the correlation between NYC restaurant health violations and Yelp ratings. By analyzing this relationship, it provides actionable insights for stakeholders to improve health compliance and customer satisfaction.
-
 
 ---
 
@@ -13,7 +11,7 @@ The project addresses the correlation between NYC restaurant health violations a
 6. [Interface](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#6-interface)
 7. [Supporting Files](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#7-supporting-files)
 8. [PowerPoint Presentation](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#8-powerpoint-presentation)
-9. Conclusion and Insights
+9. [Conclusion and Insights](https://github.com/LucaSavarese104/cis4400NYCRestaurants?tab=readme-ov-file#9-conclusion-and-insights)
 
 
 
@@ -169,7 +167,7 @@ The PowerPoint presentation provides a summary of the project's findings, visual
 ## **9. Conclusion and Insights**
 
 ### **Conclusion**
-This project provided valuable insights into the correlation between health inspection violations and Yelp ratings for restaurants across NYC boroughs. By analyzing borough-specific trends and critical violations, we gained a deeper understanding of the impact of public health compliance on customer satisfaction and restaurant reputation. The integration of NYC Open Data and Yelp API data allowed us to create actionable recommendations for stakeholders, including restaurant owners, health inspectors, and policymakers.
+This project provided insights into the correlation between health inspection violations and Yelp ratings for restaurants across NYC boroughs. By analyzing borough-specific trends and critical violations, we gained a deeper understanding of the impact of public health compliance on customer satisfaction and restaurant reputation. The integration of NYC Open Data and Yelp API data allowed us to create actionable recommendations for stakeholders, including restaurant owners, health inspectors, and policymakers.
 
 ---
 
@@ -199,7 +197,7 @@ This project provided valuable insights into the correlation between health insp
 
 2. **For Health Inspectors**:
    - Target inspections in high-risk ZIP codes, particularly in Manhattan and Brooklyn.
-   - Use temporal data to anticipate periods of increased violations and allocate resources accordingly.
+   - Use seasonal data to anticipate periods of increased violations and allocate resources accordingly.
 
 3. **For Policymakers**:
    - Develop borough-specific public health initiatives to address recurring issues in high-violation areas.
