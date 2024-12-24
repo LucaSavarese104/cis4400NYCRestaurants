@@ -155,7 +155,7 @@ This project analyzes NYC restaurant health violations and their correlation wit
 ## **7. Supporting Files**
 
 1. **Model & Architecture**:
-   - [Information Architecture](Model%20&%20Architecture/information_architecture.png)
+   - [Information Architecture](<Model%20&%20Architecture/information%20architecture.png>)
    - [Data Architecture](Model%20&%20Architecture/Data%20Architecture.png)
    - [Dimensional Model](Model%20&%20Architecture/Dimensional%20Model%20Restaurant%20Analysis.png)
 
